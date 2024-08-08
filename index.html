@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,17 +8,92 @@
 
     <!-- Website & Author Information -->
     <meta name="author" content="...">
-    <meta name="description" content="This lab demonstrates a responsive web signup form for a fictitious tech startup.">
+    <meta name="description"
+        content="This lab demonstrates a responsive web signup form for a fictitious tech startup.">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap" rel="stylesheet">
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
 
+<body>
+    <div class="flex-container">
+        <div class="hide">
+            <img src="img/work-at-home.webp" alt="home">
+        </div>
+        <div class="size">
+            <section class="backg">
+                <img src="img/logo.svg" alt="logo">
+                <h1 class="sr-only">remote.ly</h1>
+            </section>
+            <section class="header">
+                <h2>Make every day ‘bring your pet to work’ day.</h2>
+                <p>Our award-winning platform lets you take your work on the go, wherever life may lead you. Sign up
+                    now to
+                    securely connect to clients, no matter where you are.</p>
+            </section>
+            <div class="qq">
+                <div class="yellow">
+                    <p>Try it free for 7 days, with plans starting at $25/month. </p>
+                </div>
+                <form action="#" method="POST">
+                    <fieldset>
+                        <h3>Your Account</h3>
+                        <div>
+                            <label for="username">Username</label>
+                            <input id="username" type="text" name="username" required>
+                        </div>
+                        <div>
+                            <label for="email">Email</label>
+                            <input id="email" type="email" name="email" required>
+                        </div>
+                        <div>
+                            <label for="password">Password </label>
+                            <input id="password" type="password" name="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$" required>
+                            <p>Your password must contain at least one uppercase letter, one lowercase letter, and one number.</p>
+                        </div>
+                        <div>
+                            <label for="confirmPassword">Password (Again!) </label>
+                            <input id="confirmPassword" type="password" name="confirmPassword" required>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <h3>All About You</h3>
+                        <div>
+                            <label for="firstName">First Name</label>
+                            <input id="firstName" type="text" name="firstName" required>
+                        </div>
+                        <div>
+                            <label for="lastName">Last Name</label>
+                            <input id="lastName" type="text" name="lastName" required>
+                        </div>
+                        <div>
+                            <label for="deadline">Deadline</label>
+                            <input id="deadline" type="date" name="deadline" required>
+                        </div>
+                        <div>
+                            <label for="btype">Business Type</label>
+                            <select name="type" id="btype">
+                                <option value="Sole Proprietorship">Sole Proprietorship</option>
+                                <option value="Partnership">Partnership</option>
+                                <option value="Limited Liability Company">Limited Liability Company</option>
+                                <option value="Corporation">Corporation</option>
+                            </select>
+                        </div>
+                    </fieldset>
+                    <div>
+                        <button type="submit" class="button">Claim your Free Trial</button>
+                    </div>
+                </form>
+                <p class="single">By signing up, you agree to our <a href="#">Terms of Service</a> and <a
+                        href="#">Privacy Policy.</a></p>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
