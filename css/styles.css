@@ -25,3 +25,221 @@ body {
     3. have a drop-shadow on the text
 
 */
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.inner-container,
+section {
+    padding: 1rem;
+}
+
+.backg {
+    display: flex;
+    flex-direction: row;
+
+}
+
+h1 {
+    color: var(--white);
+    font-size: 1.3rem;
+    font-weight: 200;
+}
+
+h2,
+h3 {
+    color: var(--black);
+    font-size: 2.5rem;
+    font-weight: 200;
+}
+
+
+h3 {
+    font-size: 1.4rem;
+}
+
+p {
+    margin-bottom: 1.5rem;
+}
+
+.header h2 {
+    font-size: 3.6rem;
+    text-transform: none;
+}
+
+.header p {
+    font-size: 1rem;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin-bottom: .4rem;
+}
+
+label {
+    font-size: 1.2rem;
+    display: block;
+}
+
+fieldset p {
+    font-size: 1rem;
+}
+
+form div {
+    margin-bottom: 1.5rem;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    border: 1px solid var(--dark-grey);
+    border-radius: 5px;
+    padding: 0.5rem;
+    box-shadow: 2px 2px 3px var(--dark-grey);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 300px;
+}
+
+
+
+.qq {
+    background-color: var(--mid-grey);
+    margin: 0rem 1.3rem;
+    padding: 0rem 1.3rem;
+    border-radius: 1rem;
+}
+
+.yellow {
+    background-color: var(--yellow);
+    color: var(--white);
+    margin: auto;
+    padding: 5px;
+    text-align: center;
+    width: 500px;
+    font-size: 24px;
+}
+
+.single {
+    font-size: .9rem;
+    padding: 1.7rem 1.2rem;
+    text-align: center;
+}    
+.button {
+        background-color: var(--grey-blue-hover);
+        font-family: 'Work Sans', sans-serif;
+        border: 1px solid var(--black);
+        border-radius: 4px;
+        box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0;
+        box-sizing: border-box;
+        color: #fff;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 400;
+        padding: 10px 170px;
+        text-align: center;
+        transition: transform 150ms, box-shadow 150ms;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+    }
+
+    .button:hover {
+        background-color: var(--grey-blue-hover);
+        box-shadow: rgba(0, 0, 0, .15) 0 3px 9px 0;
+        transform: translateY(-2px);
+    }
+
+@media only screen and (min-width: 600px) {
+.backg {
+    background-image: url('../img/work-at-home-with-pets.webp');
+    background-position: center;
+    background-size: cover;
+    /* width: 600px;  */
+    height: 58rem;
+}
+    h1 {
+        margin-left: 3rem;
+        margin-top: .3rem;
+        text-shadow: 2px 2px 2px #374456;
+    }
+
+    h3 {
+        padding: 1.2rem 0;
+    }
+
+    .qq {
+        background-color: var(--dark-grey);
+    }
+
+    .yellow {
+        background-color: var(--yellow);
+    }
+
+
+
+    .backg img {
+        width: 36px;
+        position: absolute;
+    }
+
+}
+
+
+/* 600, 820,1000? */
+
+
+
+@media only screen and (min-width: 820px) {
+    fieldset {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    fieldset div {
+        flex: 0 1 48%;
+    }
+
+    h3 {
+        width: 100%;
+    }
+
+    .inner-container,
+    section {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .button{
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    /* .size{
+        width: 500px;
+    } */
+    .hide {
+        display: none;
+    }
+
+    /* .backg{
+        background-image: url('../img/work-at-home-with-pets.webp');
+        background-image: none !important;
+        width: 0rem;
+        height: 0rem;
+    } */
+
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
